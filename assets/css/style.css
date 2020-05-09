@@ -112,7 +112,6 @@ header div img {
     margin: 0 auto 10px;
     text-align: center;
     flex-wrap: wrap;
-    overflow: scroll;
 }
 
 a img {
@@ -123,10 +122,8 @@ a img {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(85%, 1fr));
-    grid-template-rows: repeat(5, 35vw);
+    grid-template-rows: repeat(5, 50vw);
     grid-gap: 10px;
-    width: 85%;
-    max-height: 100vw;
 }
 
 .grid-item {
