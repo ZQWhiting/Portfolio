@@ -5,13 +5,15 @@
 }
 
 :root {
-    --lilac: #897594;
-    --egg: #E6EFF7;
-    --blue: #5287AA;
+    --lilac: #8E65DB;
+    --egg: #E6E2DE;
+    --blue: #3A8EA7;
+    --dark-green: #334A52;
 }
 
 body {
     background-color: var(--egg);
+    color: var(--dark-green);
 }
 
 a {
@@ -60,3 +62,31 @@ header div {
 header div img {
     width: 100%;
 }
+
+.hero {
+    background-image: url(../images/Hero-p.jpg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: contain;
+}
+
+.hero div {
+    width: 50%;
+}
+
+.hero-txt {
+    padding: 5vw;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.hero div img {
+    width: 100%;
+}
+
+.hero h1 {
+    text-align: center;
+    font-size: 8vw;
+}
+
