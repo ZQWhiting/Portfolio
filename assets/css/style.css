@@ -53,6 +53,17 @@ header nav ul li {
     padding-top: 2vw;
 }
 
+header nav ul li a, header nav ul li span {
+    padding: 0 1vw;
+}
+
+header nav ul li a:hover, header nav ul li span:hover {
+    color: var(--blue);
+    background-color: white;
+    border-radius: 50px;
+    text-shadow: none;
+}
+
 header nav ul li:first-child {
     border-bottom: .2vw solid white;
 }
@@ -95,6 +106,7 @@ header div img {
 }
 
 .section-title {
+    font-size: 5vw;
     color: var(--blue);
     display: flex;
     justify-content: center;
@@ -114,9 +126,9 @@ header div img {
     flex-wrap: wrap;
 }
 
-a img {
-    width: 100%;
-    height: 100%;
+.section-content p, address {
+    line-height: 1.5;
+    font-size: 2.5vw;
 }
 
 .grid-container {
@@ -124,12 +136,78 @@ a img {
     grid-template-columns: repeat(auto-fill, minmax(85%, 1fr));
     grid-template-rows: repeat(5, 50vw);
     grid-gap: 10px;
+    width: 85%
+}
+
+.project1 {
+    background-image: url("../images/runbuddy.jpg");
+}
+
+.project2 {
+    background-image: url("../images/LED.jpg");
+}
+
+.project3 {
+    background-image: url("../images/Calculator.jpg");
+}
+
+.project4 {
+    background-image: url("../images/puzzle.jpg");
+}
+
+.project5 {
+    background-image: url("../images/surf.jpg");
 }
 
 .grid-item {
+    display: flex;
+    background-size: cover;
     grid-row: span 1;
     grid-column: span 1;
-    width: 100%;
-    height: 100%;
+    position: relative;
 }
 
+.grid-item::before {
+    display: flex;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgba(120, 120, 236, 0.3);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+.grid-item:hover::before {
+    background: rgba(166, 236, 120, 0.3);
+}
+
+.item-content {
+    text-align: left;
+    padding: 20px 20px 20px 5px;
+    background-color: var(--blue);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+}
+
+.item-content h3 {
+    font-size: 4vw;
+}
+
+.item-content h4 {
+    font-size: 3vw;
+}
+
+address a, address span {
+    padding: 1vw;
+}
+
+address a:hover, address span:hover {
+    background-color: var(--blue);
+    color: var(--egg);
+    border-radius: 50px;
+}
