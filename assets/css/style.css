@@ -28,10 +28,11 @@ li {
 header {
     background-color: var(--blue);
     display: flex;
+    justify-content: center;
 }
 
 header nav {
-    width: 40%;
+    width: 30%;
 }
 
 header nav ul {
@@ -40,37 +41,37 @@ header nav ul {
     justify-content: center;
     border-bottom: .2vw solid white;
     border-top: .2vw solid white;
-    margin: 3vw 5vw;
+    margin: 2vw 5vw;
 }
 
 header nav ul li {
+    font-size: 3vw;
+    padding-top: 1vw;
     list-style: none;
     color: white;
-    font-size: 5vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     width: 90%;
     text-align: center;
-    padding-top: 2vw;
-}
-
-header nav ul li a, header nav ul li span {
-    padding: 0 1vw;
-}
-
-header nav ul li a:hover, header nav ul li span:hover {
-    color: var(--blue);
-    background-color: white;
-    border-radius: 50px;
-    text-shadow: none;
 }
 
 header nav ul li:first-child {
     border-bottom: .2vw solid white;
 }
 
+header nav ul li a {
+    padding: 0 1vw;
+}
+
+header nav ul li a:hover {
+    color: var(--blue);
+    background-color: white;
+    border-radius: 50px;
+    text-shadow: none;
+}
+
 header div {
+    width: 15%;
     display: flex;
-    width: 20%;
     align-self: center;
 }
 
@@ -79,30 +80,34 @@ header div img {
 }
 
 .hero {
-    background-image: url(../images/Hero-p.jpg);
+    background-image: url("../images/Hero-p.jpg");
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-size: contain;
-}
-
-.hero div {
-    width: 50%;
+    background-size: cover;
 }
 
 .hero-txt {
-    padding: 5vw;
+    padding: 2.5vw;
     color: white;
     text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    text-align: center;
 }
 
-.hero div img {
+.hero-img {
+    width: 40%;;
+}
+
+.hero-img img {
     width: 100%;
 }
 
 .hero h1 {
-    text-align: center;
-    font-size: 8vw;
+    font-size: 6vw;
+    margin-bottom: 7vw;
+}
+
+.hero p {
+    font-size: 5vw;
 }
 
 .section-title {
@@ -165,6 +170,7 @@ header div img {
     grid-row: span 1;
     grid-column: span 1;
     position: relative;
+
 }
 
 .grid-item::before {
@@ -189,7 +195,7 @@ header div img {
     padding: 20px 20px 20px 5px;
     background-color: var(--blue);
     position: absolute;
-    top: 50%;
+    bottom: 10%;
     left: 0;
     z-index: 1;
 }
@@ -203,11 +209,94 @@ header div img {
 }
 
 address a, address span {
-    padding: 1vw;
+    padding: .3vw;
 }
 
-address a:hover, address span:hover {
-    background-color: var(--blue);
-    color: var(--egg);
-    border-radius: 50px;
+address li {
+    margin: 1vw;
+    font-style: normal;
+}
+
+@media screen and (min-width: 768px) {
+
+    section {
+        display: flex;
+        margin-top: 50px;
+        justify-content: flex-start;
+    }
+
+    .hero {
+        margin: 0;
+    }
+
+    .section-title {
+        width: 20%;
+        border: none;
+        border-right: .5vw solid var(--blue);
+        padding: 20px;
+        text-align: right;
+        font-size: 3vw;
+        justify-content: flex-end;
+        margin-left: 3vw;
+    }
+
+    .section-content {
+        width: 60%;
+        padding: 10px;
+        text-align: left;
+        justify-content: flex-start;
+        flex: 1;
+        margin: 0 5vw 0 2vw;
+    }
+
+    .section-content p {
+        font-size: 1.7vw;
+        line-height: 1.2;
+    }
+
+    .grid-container {
+        grid-template-rows: repeat(3, 15vw);
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+    }
+
+    .large-item {
+        grid-row: 1 / span 2;
+        grid-column: 1 / span 2;
+    }
+
+    .item-content {
+        padding: .5vw;
+
+    }
+
+    .item-content h3 {
+        font-size: 2.5vw;
+    }
+
+    .item-content h4 {
+        font-size: 1vw;
+    }
+
+    address a:hover, address span:hover {
+        background-color: var(--blue);
+        color: var(--egg);
+        border-radius: 50px;
+    }
+
+    address.section-content {
+        align-self: center;
+        justify-content: center;
+    }
+
+    address ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    address li {
+        font-size: 2.2vw;
+        border-bottom: .5vw solid var(--blue);
+    }
 }
