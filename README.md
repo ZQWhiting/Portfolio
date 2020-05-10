@@ -8,9 +8,7 @@ https://zqwhiting.github.io/Portfolio/
 
 ## Visuals
 
-<img src="./assets/images/BigScreenshot.jpg" width="300">
-<img src="./assets/images/SmallScreenshot.jpg" width="300">
-<img src="./assets/images/GIF.gif" width="300">
+<img src="./assets/images/GIF.gif" width="300"><img src="./assets/images/BigScreenshot.jpg" width="300"><img src="./assets/images/SmallScreenshot.jpg" width="300">
 
 ## Author
 
