@@ -6,12 +6,12 @@ This is my developer portfolio, which I have linked to my live projects and my r
 
 https://zqwhiting.github.io/Portfolio/
 
-## Visuals
-
-![Screenshot of Zachary's Portfolio for bigger screens](./assets/images/BigScreenshot.jpg)
-![Screenshot of Zachary's Portfolio for smaller screens](./assets/images/SmallScreenshot.jpg)
-![Gif showing Zachary's Portfolio](./assets/images/GIF.gif)
-
 ## Author
 
 Solely developed by Zachary Q. Whiting
+
+## Visuals
+
+![A gif showing Zachary's Portfolio](./assets/images/GIF.gif)
+![A screenshot of Zachary's Portfolio for bigger screens](./assets/images/BigScreenshot.jpg)
+![A screenshot of Zachary's Portfolio for smaller screens](./assets/images/SmallScreenshot.jpg)
