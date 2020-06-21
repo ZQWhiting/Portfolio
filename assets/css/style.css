@@ -172,12 +172,12 @@ header div img {
     width: 100%;
 }
 
-.project1 {
+.project2 {
     background-image: url("../images/runbuddy.jpg");
 }
 
-.project2 {
-    background-image: url("../images/LED.jpg");
+.project1 {
+    background-image: url("../images/home-screen.png");
 }
 
 .project3 {
