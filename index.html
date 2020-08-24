@@ -1,128 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio - Zachary Q. Whiting</title>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Zachary Q. Whiting</title>
-  <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+	<body>
+		<!-- Header -->
+		<header>
+			<nav>
+				<ul class="nav-left">
+					<li><a href="#aboutme">About Me</a></li>
+					<li><a href="#projects">My Projects</a></li>
+				</ul>
+			</nav>
+			<div>
+				<img src="./assets/images/Logo.png" alt="Personal Logo" />
+			</div>
+			<nav>
+				<ul class="nav-right">
+					<li><a href="#contact">Contact Me</a></li>
+					<li><a href="./resume.html">My Resume</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- Hero -->
+		<section class="hero">
+			<div class="hero-txt">
+				<h1>Welcome to my Portfolio!</h1>
+				<p>Zachary Q. Whiting</p>
+			</div>
+			<div class="hero-img">
+				<img
+					src="./assets/images/Me.JPG"
+					alt="Zachary Whiting smiling"
+				/>
+			</div>
+		</section>
+		<!-- AboutMe -->
+		<section id="aboutme">
+			<div class="section-title">
+				<h2>
+					About Me
+				</h2>
+			</div>
+			<div class="section-content">
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Voluptatem itaque quibusdam officia nisi eius
+					impeditrepellendus odio tempora quia ipsa odit rem velit
+					dolorem, necessitatibus eligendi aliquid at
+					possimusquaerat?Lorem ipsum dolor sit amet consectetur
+					adipisicing elit. Quidem explicabo cumque, facilis
+					praesentiumadipisci molestias vero eveniet reprehenderit?
+					Doloremque hic quod repudiandae dolor ab ea nihil deleniti
+					quisassumenda alias. Lorem ipsum dolor sit amet consectetur
+					adipisicing elit. Unde incidunt natus labore eaquequasi.
+					Tempore ullam debitis illo ipsam esse provident accusamus
+					corporis. Ipsum, reiciendis nulla ducimus nemomolestias
+					possimus!
+				</p>
+				<br />
+				<p>
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+					Reprehenderit, rem! Commodi, quisquam in id totam fugiat
+					expedita, delectus dicta consequatur eum voluptatem amet
+					porro animi temporibus reiciendis natus numquam voluptas.
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Vitae aliquid enim aliquam odit ex cum veritatis quas
+					repellendus id, quam, pariatur veniam recusandae. Dicta
+					praesentium amet, perferendis unde nesciunt odit. Lorem
+					ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+					mollitia modi! Molestiae doloremque repellat minus vel,
+					officiis, eaque fugiat natus obcaecati voluptatum odio
+					eveniet quas, repudiandae adipisci minima non quisquam?
+				</p>
+			</div>
+		</section>
+		<!-- Projects -->
+		<section id="projects">
+			<div class="section-title">
+				<h2>
+					My Projects
+				</h2>
+			</div>
+			<div class="section-content">
+				<div class="grid-container">
+					<a
+						class="grid-item large-item project1"
+						href="https://company-calendar.herokuapp.com/"
+						target="_blank"
+					>
+						<div class="item-content">
+							<h3>Company Calendar</h3>
+							<br />
+							<h4>Full Stack</h4>
+						</div>
+					</a>
+					<a
+						class="grid-item project2"
+						href="https://zqwhiting.github.io/media4u"
+						target="_blank"
+					>
+						<div class="item-content">
+							<h3>Media 4U</h3>
+							<br />
+							<h4>Bulma/JavaScript</h4>
+						</div>
+					</a>
+					<a
+						class="grid-item project3"
+						href="https://zqwhiting.github.io/run-buddy/"
+						target="_blank"
+					>
+						<div class="item-content">
+							<h3>Run Buddy</h3>
+							<br />
+							<h4>HTML/CSS</h4>
+						</div>
+					</a>
 
-<body>
-  <!-- Header -->
-  <header>
-    <nav>
-      <ul class="nav-left">
-        <li><a href="#aboutme">About Me</a></li>
-        <li><a href="#projects">My Projects</a></li>
-      </ul>
-    </nav>
-    <div>
-      <img src="./assets/images/Logo.png" alt="Personal Logo" />
-    </div>
-    <nav>
-      <ul class="nav-right">
-        <li><a href="#contact">Contact Me</a></li>
-        <li><a href="./resume.html">My Resume</a></li>
-      </ul>
-    </nav>
-  </header>
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-txt">
-      <h1>Welcome to my Portfolio!</h1>
-      <p>Zachary Q. Whiting</p>
-    </div>
-    <div class="hero-img">
-      <img src="./assets/images/Me.JPG" alt="Zachary Whiting smiling">
-    </div>
-  </section>
-  <!-- AboutMe -->
-  <section id="aboutme">
-    <div class="section-title">
-      <h2>
-        About Me
-      </h2>
-    </div>
-    <div class="section-content">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem itaque quibusdam officia nisi eius
-        impeditrepellendus odio tempora quia ipsa odit rem velit dolorem, necessitatibus eligendi aliquid at
-        possimusquaerat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem explicabo cumque, facilis
-        praesentiumadipisci molestias vero eveniet reprehenderit? Doloremque hic quod repudiandae dolor ab ea nihil
-        deleniti quisassumenda alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde incidunt natus
-        labore eaquequasi. Tempore ullam debitis illo ipsam esse provident accusamus corporis. Ipsum, reiciendis nulla
-        ducimus nemomolestias possimus!
-      </p><br>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, rem! Commodi, quisquam in id totam
-        fugiat expedita, delectus dicta consequatur eum voluptatem amet porro animi temporibus reiciendis natus numquam
-        voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aliquid enim aliquam odit ex cum
-        veritatis quas repellendus id, quam, pariatur veniam recusandae. Dicta praesentium amet, perferendis unde
-        nesciunt odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, mollitia modi! Molestiae
-        doloremque repellat minus vel, officiis, eaque fugiat natus obcaecati voluptatum odio eveniet quas, repudiandae
-        adipisci minima non quisquam?
-      </p>
-    </div>
-  </section>
-  <!-- Projects -->
-  <section id="projects">
-    <div class="section-title">
-      <h2>
-        My Projects
-      </h2>
-    </div>
-    <div class="section-content">
-      <div class="grid-container">
-        <a class="grid-item large-item project1" href="https://zqwhiting.github.io/media4u" target="_blank">
-          <div class="item-content">
-            <h3>Media 4U</h3><br>
-            <h4>Bulma/JavaScript</h4>
-          </div>
-        </a>
-        <a class="grid-item project2" href="https://zqwhiting.github.io/run-buddy/" target="_blank">
-          <div class="item-content">
-            <h3>Run Buddy</h3><br>
-            <h4>HTML/CSS</h4>
-          </div>
-        </a>
-        <a class="grid-item project3">
-          <div class="item-content">
-            <h3>N/A</h3><br>
-            <h4>TBA</h4>
-          </div>
-        </a>
-        <a class="grid-item project4">
-          <div class="item-content">
-            <h3>N/A</h3><br>
-            <h4>TBA</h4>
-          </div>
-        </a>
-        <a class="grid-item project5">
-          <div class="item-content">
-            <h3>N/A</h3><br>
-            <h4>TBA</h4>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-  <!-- Contact -->
-  <section id="contact">
-    <div class="section-title">
-      <h2>
-        Contact Me
-      </h2>
-    </div>
-    <address class="section-content">
-      <ul>
-        <li><a href="https://linkedin.com/in/zqwhiting" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/ZQWhiting" target="_blank">GitHub</a></li>
-        <li><a href="mailto:zach.whiting@icloud.com" target="_blank">zach.whiting@icloud.com</a></li>
-        <li><span>385-237-6420</span></li>
-      </ul>
-    </address>
-  </section>
-</body>
-
+					<a class="grid-item project4">
+						<div class="item-content">
+							<h3>N/A</h3>
+							<br />
+							<h4>TBA</h4>
+						</div>
+					</a>
+					<a class="grid-item project5">
+						<div class="item-content">
+							<h3>N/A</h3>
+							<br />
+							<h4>TBA</h4>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+		<!-- Contact -->
+		<section id="contact">
+			<div class="section-title">
+				<h2>
+					Contact Me
+				</h2>
+			</div>
+			<address class="section-content">
+				<ul>
+					<li>
+						<a
+							href="https://linkedin.com/in/zqwhiting"
+							target="_blank"
+							>LinkedIn</a
+						>
+					</li>
+					<li>
+						<a href="https://github.com/ZQWhiting" target="_blank"
+							>GitHub</a
+						>
+					</li>
+					<li>
+						<a href="mailto:zach.whiting@icloud.com" target="_blank"
+							>zach.whiting@icloud.com</a
+						>
+					</li>
+					<li><span>385-237-6420</span></li>
+				</ul>
+			</address>
+		</section>
+	</body>
 </html>
